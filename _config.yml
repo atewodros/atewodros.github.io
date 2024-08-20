@@ -1,0 +1,4 @@
+title: My Jekyll Site
+description: A simple Jekyll site.
+baseurl: "/atewodros.github.io" # the subpath of your site, e.g., /blog
+url: "https://atewodros.github.io" # the base hostname & protocol for your site
