@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Variables
+REPO_URL="https://github.com/atewodros/atewodros.github.io.git"
+#STATE_FILE="terraform.tfstate"
+#STATE_FILE_BK="terraform.tfstate.backup"
+#STATE_SCRIPT="state.sh"
+
+# Clone repository if not already present
+if [ ! -d ".git" ]; then
+  git clone $REPO_URL
+  cd $(basename "$REPO_URL" .git)
+fi
+
+# Pull the latest state file
+git pull origin main
+
+# Run Terraform commands
+#terraform init
+#terraform apply
+
+# Add and commit state file changes
+#git add $STATE_FILE
+#git add $STATE_FILE_BK
+#git add $STATE_SCRIPT
+git add .
+git commit -m "Update Terraform repo"
+git push origin main
