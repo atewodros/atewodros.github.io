@@ -1,4 +1,10 @@
 title: My Jekyll Site
 description: A simple Jekyll site.
-baseurl: "/atewodros.github.io" # the subpath of your site, e.g., /blog
+baseurl: "" # the subpath of your site, e.g., /blog
 url: "https://atewodros.github.io" # the base hostname & protocol for your site
+theme: minima # You can change this to your desired Jekyll theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+markdown: kramdown

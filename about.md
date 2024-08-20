@@ -1,10 +1,8 @@
 ---
-layout: page
-title: About Us
-subtitle: Learn more about our team and mission
+layout: default
+title: About
 ---
 
-<h1>{{ page.title }}</h1>
-<h2>{{ page.subtitle }}</h2>
+# About
 
-<p>Welcome to our about page. Here we explain who we are and what we do.</p>
+This is the about page of your new Jekyll site. You can add some information about yourself or your site here.
