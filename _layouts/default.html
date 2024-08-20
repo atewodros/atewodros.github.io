@@ -16,7 +16,14 @@
   <main>
     {{ content }}
   </main>
-
+  <div class="posts">
+    {% for post in site.posts %}
+      <article>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+      </article>
+    {% endfor %}
+  </div>
   <footer>
     <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
   </footer>
